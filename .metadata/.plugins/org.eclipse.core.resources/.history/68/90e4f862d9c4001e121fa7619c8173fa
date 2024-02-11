@@ -1,0 +1,5 @@
+package com.effigo.employeemanagement.dto.response;
+
+public class EmployeeResponse {
+
+}

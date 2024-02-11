@@ -1,0 +1,6 @@
+package com.effigo.LearningPortal.dto.mapper;
+@Mapper
+public class CategoryEntityMapper {
+	CourseEntity
+
+}

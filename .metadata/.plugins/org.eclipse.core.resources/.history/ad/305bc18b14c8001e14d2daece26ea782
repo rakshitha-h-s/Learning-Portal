@@ -1,0 +1,80 @@
+package com.effigo.LearningPortal.service.impl;
+
+import com.effigo.LearningPortal.dto.mapper.UserEntityMapper;
+import com.effigo.LearningPortal.dto.request.UserEntityrequest;
+import com.effigo.LearningPortal.dto.response.UserEntityresponse;
+import com.effigo.LearningPortal.entity.UserEntity;
+import com.effigo.LearningPortal.repository.UserEntityRepository;
+import com.effigo.LearningPortal.service.Optiional;
+import com.effigo.LearningPortal.service.UserEntityService;
+import com.effigo.LearningPortal.service.UserEntitydto;
+import com.effigo.employeemanagement.dto.mapper.EmployeeMapper;
+import com.effigo.employeemanagement.entity.Entityclass;
+import com.effigo.employeemanagement.repository.EmployeeRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+public class UserEntityServiceImpl implements UserEntityService{
+	private final UserEntityRepository userentityRepository;
+	public UserEntityServiceImpl(UserEntityRepository userentityRepository)
+	{
+		this.userentityRepository=userentityRepository;
+	}
+	@Override
+	public List<UserEntity> findAllUser() {
+		// TODO Auto-generated method stub
+		return userentityRepository.findAll();
+	}
+
+	@Override
+	public Optional<UserEntity> findById(Long id) {
+		// TODO Auto-generated method stub
+		return userentityRepository.findById(id);
+	}
+
+	@Override
+	public UserEntity saveUserEntity(UserEntity userentity) {
+		// TODO Auto-generated method stub
+		return userentityRepository.save(userentity);
+	}
+
+	@Override
+	public UserEntity updateUserEntity(UserEntity userentity) {
+		// TODO Auto-generated method stub
+		return userentityRepository.save(userentity);
+	}
+
+	@Override
+	public void deleteUserentity(Long id) {
+		// TODO Auto-generated method stub
+		userentityRepository.deleteById(id);
+	}
+
+	@Override
+	public UserEntityresponse saveUserEntity(UserEntityrequest userentityrequest) {
+		// TODO Auto-generated method stub
+		UserEntity userEntity = UserEntityMapper.MAPPER.fromRequestToEntity(userentityrequest);
+        userentityRepository.save(userEntity);
+        return UserEntityMapper.MAPPER.fromEntityToResponse(userEntity);
+	}
+
+	@Override
+	public UserEntityresponse updateUserEntity(UserEntityrequest userentityrequest, Long id) {
+		// TODO Auto-generated method stub
+		Optional<UserEntity> checkExistinguser = findById(id);
+        if (! checkExistinguser.isPresent())
+            throw new RuntimeException("User Id "+ id + " Not Found!");
+
+        UserEntity userEntity = UserEntityMapper.MAPPER.fromRequestToEntity(userentityrequest);
+        //UserEntity.setId(id);
+        userentityRepository.save(userEntity);
+        return UserEntityMapper.MAPPER.fromEntityToResponse(userEntity);
+	}
+
+
+	
+
+}
+

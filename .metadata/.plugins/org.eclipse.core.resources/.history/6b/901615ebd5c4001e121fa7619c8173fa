@@ -1,0 +1,10 @@
+package com.effigo.employeemanagement.dto.mapper;
+import com.effigo.employeemanagement.entity.Entityclass;
+import org.mapstruct.Mapper;
+@Mapper
+public interface EmployeeMapper {
+	 EmployeeMapper MAPPER = Mappers.getMapper(EmployeeMapper.class);
+	  Entityclass fromRequestToEntity(EmployeeRequest employeeRequest);
+	  EmployeeResponse fromEntityToResponse(Entityclass employeeEntity);
+
+}

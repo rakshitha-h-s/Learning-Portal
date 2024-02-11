@@ -1,0 +1,16 @@
+package com.effigo.LearningPortal.dto.request;
+
+import com.effigo.LearningPortal.entity.UserEntity.UserType;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class UserEntitydto {
+	 private Long u_id;
+     private String username;
+     private String password;	    
+	 private UserType userType; // Enum: LEARNER, AUTHOR
+}

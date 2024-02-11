@@ -1,0 +1,8 @@
+package com.effigo.LearningPortal.service.impl;
+
+import com.effigo.LearningPortal.service.UserEntityService;
+
+public class UserEntityServiceImpl implements UserEntityService{
+
+
+}

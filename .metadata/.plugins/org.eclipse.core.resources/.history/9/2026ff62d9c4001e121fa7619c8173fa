@@ -1,0 +1,5 @@
+package com.effigo.employeemanagement.dto.request;
+
+public class EmployeeRequest {
+
+}

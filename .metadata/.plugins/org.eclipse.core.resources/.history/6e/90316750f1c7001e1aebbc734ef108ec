@@ -1,0 +1,28 @@
+package com.effigo.LearningPortal.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.effigo.LearningPortal.entity.UserEntity;
+import com.effigo.LearningPortal.service.impl.UserEntityServiceImpl;
+import com.effigo.LearningPortal.dto.UserEntitydto;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+@RestController
+@RequestMapping("/userentity")
+public class UserEntityController {
+	@Autowired
+	UserEntityServiceImpl userentityserviceimpl;
+	
+@PostMapping("/add")
+public ResponseEntity<UserEntity> addUserEntity(@RequestBody UserEntitydto userentitydto){
+	return new ResponseEntity<>(userentityserviceimpl.saveUserEntity(userentitydto),HttpStatus.CREATED);
+}
+
+
+
+}

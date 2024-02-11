@@ -1,0 +1,5 @@
+package com.effigo.employeemanagement.dto.mapper;
+
+public interface EmployeeMapperr {
+
+}

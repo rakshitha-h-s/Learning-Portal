@@ -1,0 +1,13 @@
+package com.effigo.LearningPortal.dto.request;
+
+import com.effigo.LearningPortal.entity.CategoryEntity;
+import com.effigo.LearningPortal.entity.UserEntity;
+import lombok.Data;
+@Data
+public class CourseEntitydto {
+	private Long course_id;
+    private String course_name;
+    private CategoryEntity category;
+    private UserEntity u_id;
+
+}

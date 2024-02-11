@@ -1,0 +1,10 @@
+package com.effigo.LearningPortal.dto.request;
+
+import jakarta.persistence.Column;
+import lombok.Data;
+
+@Data
+public class CategoryEntitydto {
+	private Long category_id;
+	private String name;
+}

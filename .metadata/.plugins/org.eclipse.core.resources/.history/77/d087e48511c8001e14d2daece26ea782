@@ -1,0 +1,15 @@
+package com.effigo.LearningPortal.service;
+
+import java.util.List;
+import java.util.Optional;
+
+
+public interface UserEntityService {
+List<UserEntity> findAllUser();
+Optiional<UserEntity> findById(Long id);
+UserEntity saveUserEntity(UserEntity userentity);
+UserEntity updateUserEntity(UserEntity userentity);
+void deleteUserentity(Long id);
+UserEntitydto saveUserEntity(UserEntity)
+}
+

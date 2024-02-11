@@ -1,0 +1,12 @@
+package com.effigo.LearningPortal.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PostMapping;
+@RestController
+@RequestMapping("/userentity")
+public class UserEntityController {
+	
+@PostMapping
+
+}

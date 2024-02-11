@@ -1,0 +1,5 @@
+package com.effigo.LearningPortal.entity;
+
+public class CategoryEntity {
+
+}

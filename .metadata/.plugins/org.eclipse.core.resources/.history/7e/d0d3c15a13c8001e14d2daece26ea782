@@ -1,0 +1,19 @@
+package com.effigo.LearningPortal.service.impl;
+
+import com.effigo.LearningPortal.dto.request.UserEntityrequest;
+import com.effigo.LearningPortal.entity.UserEntity;
+import com.effigo.LearningPortal.repository.UserEntityRepository;
+import com.effigo.LearningPortal.service.Optiional;
+import com.effigo.LearningPortal.service.UserEntityService;
+import com.effigo.LearningPortal.service.UserEntitydto;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+public class UserEntityServiceImpl implements UserEntityService{
+
+
+	
+
+}
+

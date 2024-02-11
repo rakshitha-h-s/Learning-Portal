@@ -1,0 +1,5 @@
+package com.effigo.LearningPortal.repository;
+
+public interface UserEntityRepository {
+
+}

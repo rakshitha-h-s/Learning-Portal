@@ -1,0 +1,5 @@
+package com.effigo.LearningPortal.dto.response;
+
+public class UserEntityresponse {
+
+}

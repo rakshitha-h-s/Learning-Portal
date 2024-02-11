@@ -1,0 +1,23 @@
+package com.effigo.LearningPortal.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.effigo.LearningPortal.dto.request.UserEntityrequest;
+import com.effigo.LearningPortal.dto.response.UserEntityresponse;
+import com.effigo.LearningPortal.entity.UserEntity;
+import com.effigo.employeemanagement.dto.request.EmployeeRequest;
+import com.effigo.employeemanagement.dto.response.EmployeeResponse;
+import com.effigo.employeemanagement.entity.Entityclass;
+
+
+public interface UserEntityService {
+List<UserEntity> findAllUser();
+Optional<UserEntity> findById(Long id);
+UserEntity saveUserEntity(UserEntity userentity);
+UserEntity updateUserEntity(UserEntity userentity);
+void deleteUserentity(Long id);
+UserEntityresponse saveUserEntity(UserEntityrequest userentityrequest);
+UserEntityresponse updateUserEntity(UserEntityrequest userentityrequest,Long id);
+}
+

@@ -1,0 +1,56 @@
+package com.effigo.LearningPortal.service.impl;
+
+import com.effigo.LearningPortal.dto.request.UserEntityrequest;
+import com.effigo.LearningPortal.entity.UserEntity;
+import com.effigo.LearningPortal.repository.UserEntityRepository;
+import com.effigo.LearningPortal.service.Optiional;
+import com.effigo.LearningPortal.service.UserEntityService;
+import com.effigo.LearningPortal.service.UserEntitydto;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+public class UserEntityServiceImpl implements UserEntityService{
+
+	@Override
+	public List<com.effigo.LearningPortal.service.UserEntity> findAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optiional<com.effigo.LearningPortal.service.UserEntity> findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public com.effigo.LearningPortal.service.UserEntity saveUserEntity(
+			com.effigo.LearningPortal.service.UserEntity userentity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public com.effigo.LearningPortal.service.UserEntity updateUserEntity(
+			com.effigo.LearningPortal.service.UserEntity userentity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteUserentity(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public UserEntitydto saveUserEntity() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}
+

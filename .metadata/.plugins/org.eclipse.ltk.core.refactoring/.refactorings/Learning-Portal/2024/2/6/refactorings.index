@@ -1,0 +1,12 @@
+1707467466519	Rename type 'UserCourseEnrollment'
+1707554974755	Rename package 'com.effigo.LearningPortal.dto'
+1707554999865	Rename type 'CategoryEntitydto'
+1707555014785	Rename type 'CourseEntitydto'
+1707555027230	Rename type 'FavoriteEntitydto'
+1707555040809	Rename type 'UserCourseEnrollmentdto'
+1707555073139	Rename type 'UserEntitydto'
+1707555530637	Rename package 'com.effigo.LearningPortal.dto.reponse'
+1707558950287	Delete element
+1707570177420	Delete element
+1707578724579	Encapsulate field 'username'
+1707578734781	Encapsulate field 'password'
